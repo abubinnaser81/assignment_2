@@ -14,6 +14,11 @@
   padding: 0;
 
 }
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .mainWrap{
 
     width: 82.757%;
@@ -215,51 +220,59 @@ order: 1;
 flex-grow: 0;
 
 }
-.section4{
-    
-display: flex;
-flex-direction: column;
-/* align-items: flex-start;
-align-items: center; */
-padding: 0px;
-gap: 24px;
-
-width: 640px;
-height: 331px;
-
-
-left: 141px;
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-
+.section4 {
+    margin: 60px 0;
 }
 
 
-.h22{
-    /* margin: 30px; */
-    padding: 700px;
-    text-align: center;
-   text-wrap: none;
-   display: flex;
-   /* position: absolute; */
-align-items: center;
+.title{
 text-align: center;
-width: 460.61px;
-height: 57.5px;
-flex: none;
-order: 0;
-flex-grow: 0;
+font-weight: 700;
+font-size: 46px;
+line-height: 58px;
+color: #000000;
+
+}
+.card img{
+    width: 136.76px;
+    height: 136.76px;
+    
+}
+.card h3{
+
+font-weight: 700;
+font-size: 24.523px;
+line-height: 31px;
+color: #202020;
+
+}
+.card p{
+
+font-weight: 500;
+font-size: 15.0911px;
+line-height: 28px;
+text-align: center;
+
+color: #808080;
+
+
+}
+.card{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.cardContent.display-flex {
+    padding: 80px 0;
+}
+.cardContent{
+    gap: 28px;
 }
 .nasers{
 
-box-sizing: border-box;
-height: 476.78px;
-left: 140px;
-right: 932.2px;
-top: 197.5px;
 
 background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
 border: 0.943193px solid #DEF5FF;
@@ -271,12 +284,6 @@ border-radius: 18.8639px;
 }
 .card2{
 
-box-sizing: border-box;
-
-height: 481.5px;
-left:536.1px;
-right: 536.1px;
-top: 197.5px;
 
 background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
 border: 0.943193px solid #FFF4DC;
@@ -285,14 +292,7 @@ border-radius: 18.8639px;
 
 }
 .card3{
-    
 
-box-sizing: border-box;
-
-height: 476.78px;
-left: 932.2px;
-right: 140px;
-top: 197.5px;
 
 background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
 border: 0.943193px solid #F2E8FF;
@@ -355,7 +355,132 @@ color: #8700FF;
 }
 
 
+.btngroup button {
+    width: 60px;
+    height: 60px;
+    background: #FEA301;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 26px;
+}
+.btngroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ourStories{
+    
+    background: url(image.png), linear-gradient(360deg, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.stories >div{
+    flex: 1;
+}
+.stories {
+    display: flex;
+    gap: 15px;
+}
+
+.sright {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.storiesCard {
+    background-color: #fff;
+    border-radius: 16px;
+    position: relative;
+}
+/* Article */
+
+
+.storiesCard .story-content{
+    padding:10px 35px;
+    margin-top: -30px;
+}
+.storiesCard h5 {
+    font-weight: 700;
+    font-size: 15.339px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.sleft .storiesCard p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.339px;
+    line-height: 29px;
+    color: #666666;
+    margin-bottom: 26px;
+}
+.sleft .storiesCard h5 {
+
+font-weight: 700;
+font-size: 27px;
+line-height: 38px;
+
+color: #000000;
+
+
+}
+.storiesCard .storiesDate {
+    display: inline-block;
+    width: 136.46px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.339px;
+    line-height: 29px;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #3CD8E8;
+    border-radius: 47.9343px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.storiesCard img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.sright >div {
+    flex: 1 0 47%;
+    max-width: 50%;
+}
+
+
+.btun.stories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 60px 0;
+}
+section.ourStories .title {
+    margin: 60px 0 80px 0;
+}
+.sright .storiesCard:nth-child(2) .storiesDate{
+   background-color:rgba(93, 88, 240, 1);
+}
+.sright .storiesCard:nth-child(1) .storiesDate{
+   background-color:rgba(149, 178, 38, 1);
+}
+.sright .storiesCard:nth-child(3) .storiesDate{
+   background-color:rgba(149, 178, 38, 1);
+}
+.sright .storiesCard:nth-child(4) .storiesDate{
+    background-color:rgba(149, 178, 38, 1);
+ }
 
 
 
-
+footer{
+    background-color: #01ACFD;
+    padding: 147px 0;
+    gap: 20px;
+}
